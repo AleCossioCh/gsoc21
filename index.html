@@ -92,7 +92,7 @@
     <main id="main">
 
         <!-- ======= Features Section ======= -->
-        <section class="features"></section>
+        <section class="features">
         <div class="container">
             <!-- ======== Project Goals =======-->
             <div class="section-title">
@@ -143,7 +143,7 @@
                     <div class="timeline-badge info"><i class="bi bi-check"></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title">Work package 1 - Improving Critic Description.</h4>
+                            <h4 class="timeline-title">Work package 1 - Improving Critic Description</h4>
                         </div>
                         <div class="timeline-body">
                             <p>The goal of this work package was to review and improve all the code critiques and rules descriptions. There were cases where meaningful descriptions were not provided or updated, according to the logic of the rule <a href="https://github.com/pharo-project/pharo/issues/9450"
@@ -199,7 +199,8 @@
                                         <div class="portfolio-info">
                                             <!-- <h3>Example 1</h3> -->
                                             <div>
-                                                <a href="assets/img/updateSelectPackage.jpeg" class="portfolio-lightbox" title="Example of one of the class in the package Tool-CriticBrowser witch inherits from the deprecated ComposablePresenter."><i
+                                                <a href="assets/img/updateSelectPackage.jpeg" class="portfolio-lightbox" 
+                                                title="Example of old version and new version when selecting rules."><i
                                                         class="bx bx-plus"></i></a>
                                                 <!-- <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                                             </div>
@@ -227,7 +228,8 @@
                                         <div class="portfolio-info">
                                             <!-- <h3>Example 1</h3> -->
                                             <div>
-                                                <a href="assets/img/CBParts.png" class="portfolio-lightbox" title="Example of one of the class in the package Tool-CriticBrowser witch inherits from the deprecated ComposablePresenter."><i
+                                                <a href="assets/img/CBParts.png" class="portfolio-lightbox" 
+                                                title="① quality rules and ② rule critiques sections where the changes are most remarkable. "><i
                                                         class="bx bx-plus"></i></a>
                                                 <!-- <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                                             </div>
@@ -241,7 +243,7 @@
                     <div class="timeline-badge info"><i class="bi bi-check"></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title">Work package 4 - Enhancing changes browser.</h4>
+                            <h4 class="timeline-title">Work package 4 - Enhancing changes browser</h4>
                         </div>
                         <div class="timeline-body">
                             <p>
@@ -256,7 +258,8 @@
                                     <div class="portfolio-info">
                                         <!-- <h3>Example 1</h3> -->
                                         <div>
-                                            <a href="assets/img/changesBrowser.png" class="portfolio-lightbox" title="Example of one of the class in the package Tool-CriticBrowser witch inherits from the deprecated ComposablePresenter."><i
+                                            <a href="assets/img/changesBrowser.png" class="portfolio-lightbox" 
+                                            title="Example of old version and new version of Changes Browser when a critique has transform."><i
                                                     class="bx bx-plus"></i></a>
                                             <!-- <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                                         </div>
@@ -284,13 +287,13 @@
         <!-- End Timeline Section-->
 
         <!-- ======= Video Section ======= -->
-        <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+       <!--  <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
             <div class="container">
 
                 <div class="row">
                     <div class="col-lg-6 video-box">
-                        <!-- <img src="assets/img/why-us.jpg" class="img-fluid" alt="">
-                            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> -->
+                         <img src="assets/img/why-us.jpg" class="img-fluid" alt="">
+                            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> 
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nkXGohB02V0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
@@ -313,6 +316,7 @@
 
             </div>
         </section>
+    -->
         <!-- End Video Section -->
         <section class="features">
             <!-- ======= Conclusion Section ======= -->
@@ -321,47 +325,35 @@
                 <div class="section-title">
                     <h2>Conclusion</h2>
                     <p data-aos="fade-up">
-                        <a href="#" onClick="return false;"><span
-                                title="CriticBrowser is a graphical tool that allows developers to select a list of software packages and a list of quality rules This resulting on a new list of critiques that broke the selected rules.">CriticBrowser</span>
-                        </a> uses a deprecated version of <a href="https://github.com/pharo-spec/Spec" target="_blank"><span
-                                title="Spec is a framework in Pharo for describing user interfaces">Spec</span></a>. Therefore, implementing the new enhancements directly was not feasible without first migrating the CriticBrowser to the Spec2 version;
-                        I created my own repository to do the migrations as Pharo10 was in release at the moment.
+                        In short, this summer was focused on fixing bugs, updating interfaces and adding new features
+                         for the Critic Browser and Changes Browser. These changes will help Pharo developers to not
+                          have to inspect method by method to see if there are critiques in it and fix them. In addition,
+                          enhancing the "automatically resolve this issue" option. 
+                           Nevertheless, there are still quite a few things pending that I hope to work on.
                     </p>
                     <br>
                     <p data-aos="fade-up">
-                        Accordingly this, ‘building, test, and integrate profiles’ project goal was replaced by CriticBrowser migration.
-                    </p>
-                    <br>
-                    <p data-aos="fade-up">
-                        After these changes, the rest of project goals was done.
+                        I have also considerably improved my knowledge of describing user interfaces with Spec
+                         and defining quality rules with Renraku. Also, I feel much more comfortable
+                          programming in Pharo.
                     </p>
                 </div>
             </div>
             <!-- End Conclusion Section -->
 
-            <!-- ======= Future work Section ======= -->
+            <!-- ======= After GSoC'21 Section ======= -->
 
             <div class="container">
                 <div class="section-title">
-                    <h2>Future work</h2>
+                    <h2>After GSoC'21</h2>
                     <p data-aos="fade-up">
-                        <a href="#" onClick="return false;"><span
-                                title="CriticBrowser is a graphical tool that allows developers to select a list of software packages and a list of quality rules This resulting on a new list of critiques that broke the selected rules.">CriticBrowser</span>
-                        </a> uses a deprecated version of <a href="https://github.com/pharo-spec/Spec" target="_blank"><span
-                                title="Spec is a framework in Pharo for describing user interfaces">Spec</span></a>. Therefore, implementing the new enhancements directly was not feasible without first migrating the CriticBrowser to the Spec2 version;
-                        I created my own repository to do the migrations as Pharo10 was in release at the moment.
-                    </p>
-                    <br>
-                    <p data-aos="fade-up">
-                        Accordingly this, ‘building, test, and integrate profiles’ project goal was replaced by CriticBrowser migration.
-                    </p>
-                    <br>
-                    <p data-aos="fade-up">
-                        After these changes, the rest of project goals was done.
+                        Critiques, rules, and interfaces are a big area that are actively developed and maintained. 
+                        I plan on continuing to contribute and learn of the Pharo projects, and hope to be an
+                         active member of the open source community.
                     </p>
                 </div>
             </div>
-            <!-- End Future work Section -->
+            <!-- End After GSoC'21 Section -->
 
         </section>
 
